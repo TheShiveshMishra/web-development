@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <style>
+.content{
+    height: 600px !important;
+    margin: auto !important;
+    overflow: hidden !important;
+    width: 1000px !important;
+}
+
+.imgholder{
+    height: 600px;
+    margin: auto;
+    width: 1000px;
+}
+
+.photo1{
+    opacity: 0;
+            animation: fadeinphoto 7s 1; 
+       -moz-animation: fadeinphoto 7s 1; 
+    -webkit-animation: fadeinphoto 7s 1; 
+         -o-animation: fadeinphoto 7s 1; 
+         animation-iteration-count: infinite;
+    /* float: left; */
+    position: relative;
+    /* top: 0px; */
+    z-index: 1;
+}
+
+.photo2 {
+    opacity: 0;
+            animation: fadeinphoto 7s 5s 1;
+       -moz-animation: fadeinphoto 7s 5s 1;
+    -webkit-animation: fadeinphoto 7s 5s 1;
+         -o-animation: fadeinphoto 7s 5s 1;
+    /* float: left; */
+    position: relative;
+    /* top: -400px; */
+    z-index: 1;
+}
+.photo3 {
+    opacity:0;
+            animation: fadeinphoto 7s 10s 1;
+       -moz-animation: fadeinphoto 7s 10s 1;
+    -webkit-animation: fadeinphoto 7s 10s 1;
+         -o-animation: fadeinphoto 7s 10s 1;
+    /* float: left; */
+    position: relative;
+    /* top: -800px; */
+    z-index: 1;
+}
+
+.photo4 {
+    opacity: 0;
+    animation: fadeinphoto 7s 15s 1;
+    -moz-animation: fadeinphoto 7s 15s 1;
+    -webkit-animation: fadeinphoto 7s 15s 1;
+    -o-animation: fadeinphoto 7s 15s 1;
+    /* float: left; */
+    position: relative;
+    /* top: -1200px; */
+    z-index: 1;
+}
+
+.photo5 {
+    opacity: 0;
+            animation: fadeinphoto 7s 20s 1;
+       -moz-animation: fadeinphoto 7s 20s 1;
+    -webkit-animation: fadeinphoto 7s 20s 1;
+         -o-animation: fadeinphoto 7s 20s 1;
+    /* float: left; */
+    position: relative;
+    /* top: -1600px; */
+    z-index: 1;
+}
+
+/* Animation Keyframes*/
+@keyframes fadeinphoto {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes fadeinphoto {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@-webkit-keyframes fadeinphoto {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@-o-keyframes fadeinphoto {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+        </style>
+        <body>
+            <div class="content">
+                <div class="imgholder">
+                    <img src="\img\1.png" width="1000" height="600" class="photo1"/>
+                    <img src="\img\2.png" width="1000" height="600" class="photo2"/>
+                    <img src="\img\3.png" width="1000" height="600" class="photo3"/>
+                    <img src="\img\4.png" width="1000" height="600" class="photo4"/>
+                    <img src="\img\5.png" width="1000" height="600" class="photo5"/>
+                </div>
+            </div>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,138 @@
+.line{
+    border-left: 1px solid grey;
+    height: 110% !important;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 150px;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px black;
+}
+.page{
+    margin: 0 auto;
+    max-width: 1000px;
+    width: fit-content;
+    background-color: azure;
+    padding: 10px 10px 10px 10px;  
+    border: 5px solid black;
+    box-shadow: 5px 5px 15px black;
+    height: 1000px;
+    
+}
+img{
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-bottom:10px ;
+    height: 200px;
+    width: 200px;
+    border: 10px solid seashell;
+}
+.name{
+   margin: 0px 0px 2.5px 57px;
+    font-size: 29px;
+    font-weight: bolder;
+    color: black;
+}
+.pd{
+    margin: 2.5px 0px 2.5px 85px;
+    font-size:18px;
+    color: black;
+}
+.pd1{
+    margin: 2.5px 0px 2.5px 57px;
+    font-size:18px;
+    color: black;
+}
+.half-1{
+    max-width: 500px;
+    width: 48%;
+    padding-left: 5px;
+    padding-top: 20px;
+    float: left;
+}
+.half-2{
+    max-width: 500px;
+    width: 48%;
+    float: left;
+    margin-left: 26px;
+    margin-top: 28px;
+}
+
+.headings{
+    background-color: gray;
+    color: smokia;
+    font-weight: 800;
+    font-size: x-large;
+    padding: 8px 0px 4px 10px;
+    margin: 1px;
+}
+th{
+    border: 1px solid transparent;
+    padding: 5px;
+    line-height: 12px;
+}
+td{
+    border: 1px solid transparent;
+    padding: 15px;
+    line-height: 12px;
+    font-size: 15px;
+}
+.l1,.l2{
+    max-width: 250px;
+    width: 49%;
+    float: left;
+}
+h5{
+    max-width: 250px;
+    width: 49%;
+    float: left;
+    padding-left: 3px;
+    padding-top: 2px;
+    margin-block-start:0em;
+    margin-block-end: 0em;
+}
+
+#sign{
+    width: 175px;
+    height: 39px;
+    border: none;
+    float: right;
+    padding-top: -2px;
+
+}
+.hobby{
+    display: inline;
+    font-weight: 600;
+    list-style-type: disc;
+    padding: 10px;
+}
+#co{
+    padding-left: 3px;
+    padding-top:1px ;
+    padding-bottom:2px;
+}
+#dc{
+    padding-left:3px;
+    margin-block-start: 0em;
+    margin-block-end:0em ;
+}
+.extra{
+   padding-top: 0;
+   padding-left: 25px;
+   text-align: center;
+   line-height: 16px;
+}
+ul{
+    margin-top: 1px;
+}
+div+h5{
+    float: left;
+    width: 30%;
+}
+h5+img{
+    float: left;
+    width: 60%;
+}

@@ -1,0 +1,81 @@
+/* css for slider --------------------------------------------------------------------------*/
+.imggallery  {
+  --d: 10s; /* duration */
+  
+  display: grid;
+  overflow: hidden;
+  /* -webkit-mask: linear-gradient(90deg,#0000,#000 10% 90%,#0000); */
+  }
+.imggallery > img {
+  grid-area: 5/3; 
+  height: 400px;
+  aspect-ratio: 5.3;
+  object-fit: cover;
+  animation: r var(--d) linear infinite;
+  }
+
+.imggallery > img:nth-child(2) {animation-delay: calc(1*var(--d)/4)}
+.imggallery > img:nth-child(3) {animation-delay: calc(2*var(--d)/4)}
+.imggallery > img:nth-child(4) {animation-delay: calc(3*var(--d)/4)}
+
+@keyframes r {
+  75%    {transform: translate(-300%)}
+  75.01% {transform: translate( 100%)}
+  }
+
+
+.sliderbody {
+  margin: 50px 0px 0px 0px;
+  min-height:400px;
+  display: grid;
+  place-content: top;
+  background: #C2CBCE;
+  }
+
+/* heading animation(scanner) ------------------------------------*/
+
+
+/* @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap"); */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* body {
+  height: 100vh;
+  background-color: #090909;
+  display: grid;
+  place-items: center;
+  font-family: "Kanit", sans-serif;
+} */
+
+.heading1{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 100px;
+}
+
+.text {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+}
+
+.hover-text {
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  color: #70cbe2;
+  overflow: hidden;
+  border-right: 6px solid #0db3e1;
+  transition: 0.5s ease-in-out;
+}
+
+div:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 40px #1af7ff);
+}

@@ -1,0 +1,346 @@
+/* Card animation======================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html,
+body {
+    height: 100%;
+} */
+
+.body1{
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    /* column-gap: 40px; */
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+}
+#bd1{
+    justify-content: center;
+    column-gap: 50px;
+}
+
+/* ======================== */
+.card {
+    width: 300px;
+    height: 350px;
+    /* perspective: 800px; */
+    box-shadow: 4px 4px 5px black;
+}
+
+.card__inner {
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card:hover .card__inner {
+    transform: rotateY(180deg);
+}
+
+.card__body {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card__body--front img{
+    /* background-image: radial-gradient(circle 248px at center,
+            #00ff73 0%, #5cdb95d2 47%,
+            #5cdb95 100%); */
+            border: 8px solid transparent;
+            border-radius: 8px;
+            
+}
+
+.card__body--back {
+    background-image: linear-gradient(60deg, rgb(58, 162, 180) 14%, rgba(255, 41, 232, 0.7931547619047619) 57%, rgba(252, 69, 79, 0.896796218487395) 89%);
+    transform: rotateY(180deg);
+}
+
+.card__body--back h2{
+    text-align: center;
+    top: 0;
+    text-decoration: underline;
+}
+.card__body--back p{
+    padding: 10px 5px 5px 5px;
+    overflow: hidden;
+}
+.card__body--back input{
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    color: brown;
+    background: yellow;
+}
+.card__body--back input:hover{
+    padding: 5px;
+    border: 3px solid black;
+    height: 50px;
+    width: 280px;
+    border-radius: 5px;
+    background:brown;
+    color: yellow;
+    
+}
+
+/* Card animation end======================== */
+a{
+    text-decoration: none;
+}
+.member_box{
+    margin: 20px 5px 10px 5px ;
+    height: 300px;
+    width: auto;
+    background: lightblue;
+    color: black;
+    border: 5px solid lightblue;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0);
+}
+
+.member_box h2{
+    text-align: center;
+    margin-top: 2px;
+    border: 1px solid rgb(1, 1, 1);
+    background-color: blue;
+    stroke: 10px beige;
+
+}
+.member_box ul{
+    list-style: none;
+} 
+
+.member_box>ul>li,.member_box>ul>div>li{
+    display: inline-block;
+    padding: 20px 50px 50px 50px;
+    margin: 10px 50px 50px 50px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgb(241, 170, 220);
+    /* box-shadow: 7px 7px 10px black; */
+    filter: drop-shadow(7px 7px 10px black);
+    
+}
+#jm{
+    justify-content: center;
+    margin-left: 15%;
+}
+
+.member_box>ul>div>li:hover,.member_box>ul>li:hover{
+    scale: 120%;
+    color: rgb(30, 6, 254);
+    background-color: rgb(234, 101, 221);
+    font-size: 20px;
+}
+
+.personal{
+    height: 275px;
+    width: auto;
+    /* font-size: 14px; */
+    background-color:lightblue;
+    color: rgb(0, 0, 0);
+    margin: 50px 5px 10px 5px;
+    border: 5px solid lightblue;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0);
+
+}
+.personal>h2{
+    text-align: center;
+    margin-top: 2px;
+    border: 1px solid rgb(1, 1, 1);
+    background-color: blue;
+    stroke: 10px beige;
+    
+}
+.card1>h3{
+
+    font-weight: 700px;
+    margin: 4px 4px 20px 4px ;
+    color: rgb(11, 11, 45);
+    background-color: blueviolet;
+    text-align: center;
+    border: 1px solid rgb(1, 1, 1);
+    stroke: 10px beige;
+}
+.flex{
+    display: flex;
+    column-gap:10px ;
+}
+.detailsec{
+    display: flex;
+    column-gap: 20px;
+}
+.detailsec>img{
+    height:150px; 
+    width:200px;
+    border: 3px solid black;
+    border-radius:4px;
+}
+.detailsec>img:hover{
+    transform: scale(110%);
+}
+.card1{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    background-color: deeppink;
+    color: white;
+    margin-top: 8px;
+    padding: 5px 10px 25px 10px;
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 3px;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0);
+}
+
+.love{
+    margin: 34.5px 5px 40px 5px;
+    float: left;
+    height: 315px;
+    width: 65%;
+    text-align: center;
+    background-color: black;
+    color: crimson;
+    border: 3px solid   transparent;
+    border-radius:8px ;
+    box-shadow: 5px 5px 7px rgba(125, 75, 75, 0);
+}
+
+.love>h2{
+    text-align: center;
+    text-shadow: 6px 6px 5px brown;
+    margin: 3px 4px 5px 4px;
+    border-radius: 3px;
+
+}
+
+.love>h3{
+    margin: 10px 3px 5px 3px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    background: crimson;
+    color: black;
+    text-align: center;
+    padding: 5px 4px 5px 4px;
+    text-shadow: 6px 6px 5px brown;
+} 
+
+.love>p{
+    padding: 15px 6px 25px 6px;
+}
+
+.love>a>input{
+    margin: 10px 6px 25px 6px;
+    padding:5px 5px 5px 5px;
+    background-color: crimson;
+    color: black;
+    border: 3px solid transparent;
+    border-radius: 6px;
+}
+
+.love>a>input:hover{
+    background-color: black;
+    color: crimson;
+    text-shadow: 6px 6px 9px rgb(255, 14, 14);
+    scale: 150%;
+}
+
+.side1{
+    width: 33%;
+    height: 315px;
+    float: left;
+    margin: 37px 5px 40px 5px;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.side1:hover{
+    transform: skew(-3deg);
+}
+.side1>h3{
+    text-align: center;
+    margin: 5px 4px 5px 4px;
+    border: 1px solid rgb(1, 1, 1);
+    background-color: blue; 
+    border-radius: 5px;   
+}
+.side1>h3:hover{
+    transform: skew(15deg);
+}
+.dropdown{
+    display: flex;
+    column-gap:5px;
+    justify-content: center;
+    overflow: hidden;
+}
+.s1{
+    list-style-type:none;
+    float: left;
+    width: 40%;
+    background-color: burlywood;
+    color: black;
+    text-align: center;
+    padding: 5px 6px 5px 6px;
+}
+.s1>li,.side1>p{
+    padding: 5px 6px 5px 6px;
+}
+.s1>li{
+    background-color: blue;
+    width: 150px;
+    text-align: center;
+    margin: 1.2px 0px 0px 18px;
+    border: 2px solid black;  
+}
+.s1>li:hover{
+    transform: scalex(1.2);
+    border-radius: 25px;
+}
+
+.detailbox{
+    display:flex ;
+    column-gap: 10px;
+
+}
+.details1{
+    width: 60%;
+    margin-left: 10px;
+    text-align: justify;
+}
+.details2>img{
+    border: 4px solid black;
+    border-radius: 8px; 
+}
+.details2>img:hover{
+    transform: scale(150%);
+}
+.button>a{
+    text-align: center;
+    text-decoration: none;
+    background-color: blue;
+}
+.button>a>input{
+   margin-top: 50px;
+   
+    width:175px;
+    background-color: blue;
+    color: aliceblue;
+    border: 2px solid black;
+    border-radius: 18px; 
+}

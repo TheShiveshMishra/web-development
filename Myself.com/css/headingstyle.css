@@ -1,0 +1,37 @@
+.h-text{
+    padding-top: 5px;
+    margin-left: 700px;
+    line-height: 83px;
+    }
+
+        .h-animate .text{
+    position: relative;
+    color: #00C9F3;
+    font-size: 55px;
+    text-align: center;
+    font-weight: 550;
+    line-height: 83px;
+    }
+
+    .text.sec-text:before{
+    content: "";
+    position: absolute;
+    text-align: center;
+    top: 0;
+    line-height: 83px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to left top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(5, 5, 251, 0.685));
+    border-left: 10px solid #00C9F3;
+    padding-left: 1px;
+    animation: animate 4s steps(12) infinite;
+    }
+    @keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+    }

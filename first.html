@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Web Page</title>
+    <style>
+        .heading{
+            background:fixed; color: cadetblue;
+            text-align: center; font: size 40px;
+            font-weight: bold;
+        }
+
+        .navigation{
+            background:black; 
+            margin: 5px;
+            overflow: hidden;
+            height: 40px;
+        }  
+
+        li{
+            display: inline;
+            color:whitesmoke;
+            font-size: 20px;
+            /* padding: 10px 10px 10px 10px; */
+            /* padding-top: 5px; */
+            /* margin: 5px; */
+            padding: 15px;
+            margin-top: 5px;
+
+        }
+        li:hover{
+            color: cyan;
+            font-weight: bold;
+        }
+        
+        .container{
+            padding: 10px;
+            margin: 0 auto;
+            background-color: bisque;
+            border: 2 solid bisque;
+            /* box-shadow: 3px 5px 2px rosybrown; */
+            box-shadow:10px 10px 5px 12px lightblue;
+        }
+        .container-2{
+            padding: 10px;
+            margin: 0 auto;
+            background-color: bisque;
+            border: 2 solid bisque;
+            /* box-shadow: 1px 1px 2px black,0 0 5px blue, 0 0 1px blue; */
+            box-shadow:10px 10px 5px 12px lightblue;
+        }
+        img{
+            width: 500px;
+            mix-blend-mode: multiply;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="heading">Namaste World</h1>
+        <nav class="navigation">
+            <li>Home</li>
+            <li>Edit</li>
+            <li>Tool</li>
+            <li>About Us</li>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <div>
+                <div class="container">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat praesentium 
+                        deleniti dolorem dicta, officia excepturi magni, debitis nesciunt quo recusandae perferendis 
+                        blanditiis perspiciatis delectus doloremque similique eaque? Quisquam, soluta minus!
+                    </p>
+                </div>
+                <br><br>
+                <div class="container-2">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat praesentium 
+                        deleniti dolorem dicta, officia excepturi magni, debitis nesciunt quo recusandae perferendis 
+                        blanditiis perspiciatis delectus doloremque similique eaque? Quisquam, soluta minus!
+                    </p>
+                </div>
+            </div>
+        </article>
+        <aside>
+            <img src="\img\C14 final.jpg" alt="">
+        </aside>
+    </main>
+</body>
+</html>

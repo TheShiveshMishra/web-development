@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery  {
+  --d: 9s; /* duration */
+  
+  display: grid;
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg,#0000,#000 10% 90%,#0000);
+}
+.gallery > img {
+  grid-area: 10/6;
+  height: 600px;
+  aspect-ratio: 5.3;
+  object-fit: cover;
+  animation: r var(--d) linear infinite;
+}
+
+.gallery > img:nth-child(2) {animation-delay: calc(1*var(--d)/4)}
+.gallery > img:nth-child(3) {animation-delay: calc(2*var(--d)/4)}
+.gallery > img:nth-child(4) {animation-delay: calc(3*var(--d)/4)}
+
+@keyframes r {
+  75%    {transform: translate(-300%)}
+  75.01% {transform: translate( 100%)}
+}
+
+
+body {
+  margin: 50px 0px 0px 0px;
+  min-height:500px;
+  /* display: grid; */
+  place-content: top;
+  background: #C2CBCE;
+}
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="\img\1.png" alt="a dream catcher">
+        <img src="\img\2.png" alt="a piano">
+        <img src="\img\3.png" alt="a live concert">
+        <img src="\img\4.png" alt="Paris">
+      </div>
+</body>
+</html>

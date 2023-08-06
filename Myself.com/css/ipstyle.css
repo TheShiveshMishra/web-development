@@ -1,0 +1,40 @@
+.side1{
+    width: 33%;
+    height: 315px;
+    float: left;
+    text-align: center;
+    margin: 37px 5px 40px 5px;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.side1>h3{
+    text-align: center;
+    margin: 5px 4px 5px 4px;
+    border: 1px solid rgb(1, 1, 1);
+    background-color: blue; 
+    border-radius: 5px;   
+}
+.side1>h4{
+    text-align: center;
+    margin: 5px 4px 5px 4px;
+    border: 1px solid rgb(1, 1, 1);
+    background-color: rgb(110, 110, 173); 
+    border-radius: 5px;   
+}
+.side1>a>input{
+    background-color: blue;
+    color: black;
+    text-align: center;
+    margin-top: 12px;
+}
+.side1>h3:hover{
+    transform: skew(15deg);
+}
+.side1>p{
+    padding: 5px 6px 5px 6px;
+}
+.side1>a>input:hover{
+    transform: scalex(1.2);
+    border-radius: 25px;
+}
